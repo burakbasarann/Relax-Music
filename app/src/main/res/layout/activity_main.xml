@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageView
+        android:id="@+id/imagekusstart"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:background="@mipmap/kus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtkus" />
+
+    <TextView
+        android:id="@+id/txtkus"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="37dp"
+        android:text="Kuş Sesi"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekbarrain" />
+
+    <ImageView
+        android:id="@+id/imagekusstop"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:background="@mipmap/kus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtkus" />
+
+    <SeekBar
+        android:id="@+id/seekbarkus"
+        android:layout_width="84dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="7dp"
+        android:max="100"
+        android:min="0"
+        android:progress="50"
+        android:scaleY="2"
+        android:scrollbarSize="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagekusstart" />
+
+    <ImageView
+        android:id="@+id/imageagacstart"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:adjustViewBounds="true"
+        android:background="@mipmap/agac"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtorman" />
+
+    <SeekBar
+        android:id="@+id/seekbarorman"
+        android:layout_width="84dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="29dp"
+        android:max="100"
+        android:min="0"
+        android:progress="50"
+        android:scaleY="2"
+        android:scrollbarSize="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageagacstart" />
+
+    <ImageView
+        android:id="@+id/imageagacstop"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:adjustViewBounds="true"
+        android:background="@mipmap/agac"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtorman" />
+
+    <TextView
+        android:id="@+id/txtorman"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="17dp"
+        android:text="Orman Sesi"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtaciklama" />
+
+    <ImageView
+        android:id="@+id/imageyildirimstop"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="29dp"
+        android:adjustViewBounds="true"
+        android:background="@mipmap/yildirim"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtyildirim" />
+
+    <TextView
+        android:id="@+id/txtyildirim"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="17dp"
+        android:text="Yıldırım Sesi"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekbarorman" />
+
+    <ImageView
+        android:id="@+id/imageyildirimstart"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="29dp"
+        android:adjustViewBounds="true"
+        android:background="@mipmap/yildirim"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtyildirim" />
+
+    <SeekBar
+        android:id="@+id/seekbaryildirim"
+        android:layout_width="84dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="29dp"
+        android:max="100"
+        android:min="0"
+        android:progress="50"
+        android:scaleY="2"
+        android:scrollbarSize="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageyildirimstop" />
+
+    <ImageView
+        android:id="@+id/imagedurdurstart"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="70dp"
+        android:adjustViewBounds="true"
+        android:background="@mipmap/durdur"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imagedalgastop"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="46dp"
+        android:adjustViewBounds="true"
+        android:background="@mipmap/dalga"
+        app:layout_constraintEnd_toStartOf="@+id/imageagacstart"
+        app:layout_constraintStart_toEndOf="@+id/imagerain"
+        app:layout_constraintTop_toBottomOf="@+id/txtdalga" />
+
+    <SeekBar
+        android:id="@+id/seekbardalga"
+        android:layout_width="84dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="41dp"
+        android:max="100"
+        android:min="0"
+        android:progress="50"
+        android:scaleY="2"
+        android:scrollbarSize="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/seekbarorman"
+        app:layout_constraintStart_toEndOf="@+id/seekbarrain"
+        app:layout_constraintTop_toBottomOf="@+id/imagedalgastop" />
+
+    <ImageView
+        android:id="@+id/imagedalgastart"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="46dp"
+        android:adjustViewBounds="true"
+        android:background="@mipmap/dalga"
+        app:layout_constraintEnd_toStartOf="@+id/imageagacstart"
+        app:layout_constraintStart_toEndOf="@+id/imagerain"
+        app:layout_constraintTop_toBottomOf="@+id/txtdalga" />
+
+    <TextView
+        android:id="@+id/txtdalga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="35dp"
+        android:text="Dalga Sesi"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtorman"
+        app:layout_constraintStart_toEndOf="@+id/txtyagmur"
+        app:layout_constraintTop_toBottomOf="@+id/txtaciklama" />
+
+    <ImageView
+        android:id="@+id/imageyaprakstop"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="53dp"
+        android:adjustViewBounds="true"
+        android:background="@mipmap/yaprak"
+        app:layout_constraintEnd_toStartOf="@+id/imageyildirimstart"
+        app:layout_constraintStart_toEndOf="@+id/imagekusstop"
+        app:layout_constraintTop_toBottomOf="@+id/txtyaprak" />
+
+    <ImageView
+        android:id="@+id/imageyaprakstart"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="53dp"
+        android:adjustViewBounds="true"
+        android:background="@mipmap/yaprak"
+        app:layout_constraintEnd_toStartOf="@+id/imageyildirimstop"
+        app:layout_constraintStart_toEndOf="@+id/imagekusstart"
+        app:layout_constraintTop_toBottomOf="@+id/txtyaprak" />
+
+    <SeekBar
+        android:id="@+id/seekbaryaprak"
+        android:layout_width="84dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="48dp"
+        android:max="100"
+        android:min="0"
+        android:progress="50"
+        android:scaleY="2"
+        android:scrollbarSize="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/seekbaryildirim"
+        app:layout_constraintStart_toEndOf="@+id/seekbarkus"
+        app:layout_constraintTop_toBottomOf="@+id/imageyaprakstop" />
+
+    <TextView
+        android:id="@+id/txtyaprak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="22dp"
+        android:text="Yaprak Sesi"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtyildirim"
+        app:layout_constraintStart_toEndOf="@+id/txtkus"
+        app:layout_constraintTop_toBottomOf="@+id/seekbardalga" />
+
+    <ImageView
+        android:id="@+id/imagerain"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:background="@mipmap/rainy"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtyagmur" />
+
+    <SeekBar
+        android:id="@+id/seekbarrain"
+        android:layout_width="84dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="7dp"
+        android:max="100"
+        android:min="0"
+        android:progress="50"
+        android:scaleY="2"
+        android:scrollbarSize="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagerain" />
+
+    <ImageView
+        android:id="@+id/imagerainstop"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:background="@mipmap/rainy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtyagmur" />
+
+    <TextView
+        android:id="@+id/txtyagmur"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="52dp"
+        android:text="Yağmur Sesi"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btntimer" />
+
+    <TextView
+        android:id="@+id/txtaciklama"
+        android:layout_width="156dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:shadowColor="@color/black"
+        android:text="Resimlere Tıklayarak Sesleri Aktif Edebilirsiniz"
+        android:textColor="@color/purple_700"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btntimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="7dp"
+        android:text="Başlat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txttimer" />
+
+    <Button
+        android:id="@+id/btntimerstop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="7dp"
+        android:text="Sıfırla"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txttimer" />
+
+    <TextView
+        android:id="@+id/txttimer"
+        android:layout_width="147dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="10 Dakikalık Sayaç"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
